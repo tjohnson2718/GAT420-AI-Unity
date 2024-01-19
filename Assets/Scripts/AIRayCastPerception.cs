@@ -46,7 +46,7 @@ public class AIRayCastPerception : AIPerception
 			// if there is NO raycast hit then that is an open direction
 			if (!Physics.Raycast(ray, out RaycastHit raycastHit, distance, layerMask))
 			{
-				Debug.DrawRay(ray.origin, ray.direction * distance, Color.green);
+				//Debug.DrawRay(ray.origin, ray.direction * distance, Color.green);
 				// set open direction
 				openDirection = ray.direction;
 				return true;
